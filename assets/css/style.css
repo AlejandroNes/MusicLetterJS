@@ -1,0 +1,99 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+/* UTILIDADES */
+.container{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0px auto;
+    border: 1px solid purple;
+}
+
+/* clases de estilos */
+.title{
+    background: linear-gradient(to left top, rgb(31, 0, 117), rgb(122, 0, 188));
+    text-align: center;
+    color: #fff;
+    padding: 1rem 0px;
+    margin: 0px;
+}
+.caja{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form input{
+    border: 1px solid rgba(172, 180, 189, 0.311);
+    padding: 5px 0px;
+}
+form input:focus{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(91, 6, 170, 0.575);
+}
+.submit{
+    background: linear-gradient(to left top, rgb(31, 0, 117), rgb(122, 0, 188));
+    border: none;
+    padding: 8px;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+::placeholder {
+    color: rgba(67, 72, 83, 0.447);
+    padding-left: 1rem;
+  }
+
+  .respuesta{
+    padding: 0rem 1rem 1rem 1rem;
+    color: rgb(41, 51, 73);
+  }
+  
+  /* alerta */
+  .alerta{
+    text-align: center;
+    color: rgb(228, 22, 70);
+    border: 1px solid rgb(228, 22, 70);
+    padding: 5px;
+    margin: 0px;
+    
+  }
+  .alerta p {
+    margin: 0px;
+    font-weight: 500;
+  }
+  .titulo-cancion{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 600px) {
+    .caja{
+        grid-template-columns: 1fr;
+    }
+  }
